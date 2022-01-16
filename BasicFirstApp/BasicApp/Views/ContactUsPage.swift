@@ -49,7 +49,11 @@ struct ContactUsPage: View {
                 .foregroundColor(Color("LangsBerryColor"))
             
             Spacer()
-            Text("2022 SkyLine. All Rights Reserved")
+            
+            HStack {
+                Image(systemName: "c.circle")
+                Text("2022 SkyLine All Rights Reserved")
+            }.padding(.bottom)
             
         }
                   
