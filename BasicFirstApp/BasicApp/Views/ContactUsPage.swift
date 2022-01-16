@@ -43,7 +43,7 @@ struct ContactUsPage: View {
             }.padding(.bottom)
             
             
-            Text("อ่ายรายละเอียดเพิ่มเติมได้ที่")
+            Text("อ่านรายละเอียดเพิ่มเติมได้ที่")
 
             Text("www.langsberry.com")
                 .foregroundColor(Color("LangsBerryColor"))
