@@ -21,22 +21,31 @@ struct ContactUsPage: View {
                 .padding(.bottom)
             
             HStack(alignment: .center, spacing: 20) {
-                Image("TwitterLogo")
-                    .resizable()
-                    .frame(width: 56, height: 56)
                 
-                Image("LINELogo")
-                    .resizable()
-                    .frame(width: 56, height: 56)
+                Link( destination: URL(string: "https://twitter.com/langsberry")!){
+                    Image("TwitterLogo")
+                        .resizable()
+                        .frame(width: 56, height: 56)
+                }
                 
-                Image("InstagramLogo")
-                    .resizable()
-                    .frame(width: 56, height: 56)
+                Link( destination: URL(string: "https://line.me/ti/p/@langsberry")!){
+                    Image("LINELogo")
+                        .resizable()
+                        .frame(width: 56, height: 56)
+                }
                 
-                Image("FacebookLogo")
-                    .resizable()
-                    .frame(width: 56, height: 56)
+                Link( destination: URL(string: "https://www.instagram.com/langsberry/")!){
+                    Image("InstagramLogo")
+                        .resizable()
+                        .frame(width: 56, height: 56)
+                }
                 
+                Link( destination: URL(string: "https://web.facebook.com/Langsberry")!){
+                    Image("FacebookLogo")
+                        .resizable()
+                        .frame(width: 56, height: 56)
+                }
+
             }.padding()
 
             Text("อ่านรายละเอียดเพิ่มเติมได้ที่")
