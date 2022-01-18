@@ -19,31 +19,28 @@ struct ContactUsPage: View {
             
             Text("สอบถามข้อมูล / สมัครเรียนได้ที่")
                 .padding(.bottom)
-            HStack{
+            
+            HStack(alignment: .center, spacing: 20) {
                 Image("TwitterLogo")
                     .resizable()
                     .frame(width: 56, height: 56)
-                    .padding()
                 
                 Image("LINELogo")
                     .resizable()
                     .frame(width: 56, height: 56)
-                    .padding()
                 
                 Image("InstagramLogo")
                     .resizable()
                     .frame(width: 56, height: 56)
-                    .padding()
                 
                 Image("FacebookLogo")
                     .resizable()
                     .frame(width: 56, height: 56)
-                    .padding()
                 
-            }.padding(.bottom)
-            
-            
+            }.padding()
+
             Text("อ่านรายละเอียดเพิ่มเติมได้ที่")
+                .padding(.top)
 
             Text("www.langsberry.com")
                 .foregroundColor(Color("LangsBerryColor"))
