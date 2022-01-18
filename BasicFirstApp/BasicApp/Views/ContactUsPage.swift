@@ -14,11 +14,15 @@ struct ContactUsPage: View {
             Spacer()
             Image("LangsBerryContactUsLogo")
                           .resizable()
-                          .frame(width: 280, height: 160)
-                          .padding(.bottom)
+                          .frame(width: 360, height: 220)
+            
+            Image(systemName: "minus")
+                .resizable()
+                .frame(width: 280, height: 1)
+                .padding(.bottom)
             
             Text("สอบถามข้อมูล / สมัครเรียนได้ที่")
-                .padding(.bottom)
+                .padding(.top)
             
             HStack(alignment: .center, spacing: 20) {
                 
