@@ -14,11 +14,12 @@ struct ContactUsPage: View {
             Spacer()
             Image("LangsBerryContactUsLogo")
                           .resizable()
-                          .frame(width: 360, height: 220)
+                          .frame(width: 360, height: 220, alignment: .center)
+            
             
             Image(systemName: "minus")
                 .resizable()
-                .frame(width: 280, height: 1)
+                .frame(width: 280, height: 1, alignment: .center)
                 .padding(.bottom)
             
             Text("สอบถามข้อมูล / สมัครเรียนได้ที่")
@@ -54,9 +55,11 @@ struct ContactUsPage: View {
 
             Text("อ่านรายละเอียดเพิ่มเติมได้ที่")
                 .padding(.top)
+                .frame(alignment: .center)
 
             Text("www.langsberry.com")
                 .foregroundColor(Color("LangsBerryColor"))
+                .frame(alignment: .center)
             
             Spacer()
             
@@ -64,7 +67,7 @@ struct ContactUsPage: View {
                 Image(systemName: "c.circle")
                 Text("2022 SkyLine All Rights Reserved")
             }.padding(.bottom)
-            
+             .frame(alignment: .center)
         }
                   
     }

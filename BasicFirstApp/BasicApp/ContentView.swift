@@ -8,28 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+
     var body: some View {
         TabView {
-            ContentPage()
-                .tabItem(){
-                    Image(systemName: "house.fill")
-                    Text("หน้าหลัก")
+          ContentPage()
+                .tabItem() {
+                  Image(systemName: "house.fill")
+                  Text("หน้าหลัก")
                 }
-            
-            ContactUsPage()
-                .tabItem(){
-                    Image(systemName: "phone.fill")
-                    Text("ติดต่อเรา")
-                }
-        }
-    }
-}
-
-struct HomeScreen: View {
-    var body : some View {
-        VStack{
-            Text("Home Screen")
-        }
+          
+          ContactUsPage()
+              .tabItem() {
+                  Image(systemName: "phone.fill")
+                  Text("ติดต่อเรา")
+              }
+          }
     }
 }
 
